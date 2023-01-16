@@ -68,7 +68,7 @@ function UsersLayout() {
 
 function UserProfilePage() {
   const params = useParams();
-  const userId = params.userId;
+  const id = params.userId;
   return (
     <>
       <h1>User Profile Page</h1>
@@ -78,10 +78,10 @@ function UserProfilePage() {
         </li>
         <hr />
         <li>
-          <Link to={`/users/${params.userId}/edit`}>Edit this user</Link>
+          <Link to={`/users/${params.id}/edit`}>Edit this user</Link>
         </li>
       </ul>
-      <span>User Id: {userId}</span>
+      <span>User Id: {id}</span>
     </>
   );
 }
